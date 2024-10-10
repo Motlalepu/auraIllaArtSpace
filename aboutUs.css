@@ -78,60 +78,8 @@ nav {
       }  
   }
 } 
-
-/* Burger Menu (Hidden by Default) */
-#burger-menu {
-display: none;
-flex-direction: column;
-cursor: pointer;
-gap: 5px;
-}
-
-#burger-menu div {
-width: 25px;
-height: 3px;
-background-color: #000;
-}
-
-/* Media Queries for Mobile */
-@media screen and (max-width: 768px) {
-/* Hide the regular menu and display the burger menu */
-
-#burger-menu {
-  display: flex;
-} 
-
-nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-nav ul.active {
-  display: flex;
-  text-align: center; /* Center text when responsive */
-
-}
-
-nav ul li {
-width: 100%; /* Make each menu item take full width in mobile view */
-}
-
-nav ul li a {
-width: 100%; /* Ensure the hover effect spans the full width */
-&:hover {
-    background-color: white;
-    border-radius: 0; /* Remove the rounded corners for full width hover */
-}
-}
-}
-
+ 
+ 
 .about1{
     margin: 30px;
     padding: 5px;
